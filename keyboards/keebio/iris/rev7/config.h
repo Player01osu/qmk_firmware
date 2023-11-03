@@ -19,6 +19,39 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define SPLIT_HAND_PIN D5
 
+// Mouse
+#define MK_KINETIC_SPEED                        // Enable kinetic mode
+#define MOUSEKEY_DELAY 4                        // Delay between pressing a movement key and cursor movement
+#define MOUSEKEY_INTERVAL 3                     // Time between cursor movements in milliseconds
+#define MOUSEKEY_MOVE_DELTA 64                  // Step size for accelerating from initial to base speed
+#define MOUSEKEY_INITIAL_SPEED 350              // Initial speed of the cursor in pixel per second
+#define MOUSEKEY_BASE_SPEED 3000                // Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_DECELERATED_SPEED 300          // Decelerated cursor speed
+#define MOUSEKEY_ACCELERATED_SPEED 4000         // Accelerated cursor speed
+#define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 16     // Initial number of movements of the mouse wheel
+#define MOUSEKEY_WHEEL_BASE_MOVEMENTS 32        // Maximum number of movements at which acceleration stops
+#define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 32 // Accelerated wheel movements
+#define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8  // Decelerated wheel movements
+
+
+/* ws2812 RGB LED */
+#    define RGBLED_NUM 68
+#    define RGBLED_SPLIT { 34, 34 }
+#    define RGBLIGHT_HUE_STEP 8
+#    define RGBLIGHT_SAT_STEP 8
+#    define RGBLIGHT_VAL_STEP 8
+#    define RGBLIGHT_SLEEP         /* If defined, the RGB lighting will be switched off when the host goes to sleep */
+/*== enabled animations ==*/
+//#    define RGBLIGHT_EFFECT_BREATHING
+#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#    define RGBLIGHT_EFFECT_SNAKE
+#    define RGBLIGHT_EFFECT_KNIGHT
+#    define RGBLIGHT_EFFECT_CHRISTMAS
+#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#    define RGBLIGHT_EFFECT_RGB_TEST
+#    define RGBLIGHT_EFFECT_ALTERNATING
+#    define RGBLIGHT_EFFECT_TWINKLE
 #    define RGBLIGHT_DEFAULT_VAL 120
 #    define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_MODE_RAINBOW_SWIRL + 2)
 // RGB Matrix
